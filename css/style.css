@@ -1,0 +1,145 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white; }
+  html body {
+    color: #55606e; }
+
+*, *:after, *:before {
+  box-sizing: inherit; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto; }
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+header .logo {
+  float: left;
+  margin: 19px 15px 0px 4px; }
+  header .logo img {
+    width: 82px;
+    height: 51px; }
+header .slogan {
+  font: italic 16px "Times New Roman", Times, Georgia, serif;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 34px;
+  float: left; }
+header .nav {
+  float: right;
+  list-style-type: none; }
+  header .nav li {
+    float: left;
+    border-left: 1px solid #2c323d; }
+    header .nav li a {
+      display: block;
+      line-height: 62px;
+      color: white;
+      padding: 22px 48px 22px 61px;
+      font: 16px  'Open Sans', sans-serif;
+      position: relative; }
+      header .nav li a:hover {
+        background-color: #111418; }
+      header .nav li a:after {
+        content: '';
+        background: url(../img/nav-icon.png) no-repeat;
+        position: absolute;
+        top: 22px;
+        left: 24px; }
+  header .nav .how-it-works a:after {
+    background-position: 0px 0px;
+    width: 19px;
+    height: 20px; }
+  header .nav .sign-up a:after {
+    background-position: -174px -1px;
+    width: 20px;
+    height: 18px; }
+  header .nav .login a:after {
+    background-position: -308px -2px;
+    width: 14px;
+    height: 17px; }
+
+.header, .footer {
+  background: #15181f url(../img/bg-texture.jpg) repeat;
+  color: white; }
+
+.hero {
+  background: #333 url(../img/bg-hero.jpg) no-repeat;
+  background-size: cover;
+  height: 461px;
+  text-align: center;
+  color: white;
+  padding-top: 31px; }
+  .hero h1 {
+    font-size: 52px;
+    margin: 81px 0 52px;
+    font: stong 52px 'Open Sans', sans-serif; }
+  .hero p {
+    font-size: 22px;
+    max-width: 715px;
+    margin: 0 auto 51px; }
+  .hero .btn {
+    font: 18px 'Open Sans', sans-serif;
+    color: white;
+    padding: 21px 44px 18px 44px;
+    border-radius: 3px;
+    margin: 25px; }
+  .hero .btn-green {
+    height: 50px;
+    width: 233px;
+    background-color: #83c129;
+    -webkit-box-shadow: 0px 6px 6px 1px #518719;
+    -moz-box-shadow: 0px 6px 6px 1px #518719;
+    box-shadow: 0px 6px 6px 1px #518719; }
+  .hero .btn-blue {
+    height: 49px;
+    width: 174px;
+    background-color: #068fd5;
+    -webkit-box-shadow: 0px 6px 6px 1px rgba(4, 107, 159, 0.9);
+    -moz-box-shadow: 0px 6px 6px 1px rgba(4, 107, 159, 0.9);
+    box-shadow: 0px 6px 6px 1px rgba(4, 107, 159, 0.9); }
+
+.middle {
+  background-color: white;
+  height: 20px; }
+
+footer .footer-nav {
+  float: left;
+  margin: 39px 79px 43px 63px; }
+  footer .footer-nav .column {
+    float: left; }
+    footer .footer-nav .column .title {
+      text-transform: uppercase;
+      margin-left: 41px;
+      font: bold 12px 'Open Sans';
+      color: white; }
+    footer .footer-nav .column ul {
+      list-style-type: none; }
+      footer .footer-nav .column ul a {
+        text-transform: capitalize;
+        color: #43484e;
+        font: bold 12px 'Open Sans'; }
+footer .footer-icons, footer .copyright {
+  float: right; }
+footer .footer-icons {
+  float: right;
+  margin-top: 5%;
+  margin-bottom: 3%; }
+footer .copyright {
+  clear: right;
+  text-align: right;
+  line-height: 20px;
+  font-size: 12px;
+  color: #8e959c; }
+footer .copyright a {
+  color: #8e959c;
+  margin-left: 8px; }
+
+/*# sourceMappingURL=style.css.map */

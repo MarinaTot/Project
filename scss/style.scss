@@ -1,0 +1,180 @@
+@import 'mixins';
+
+html{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: rgb(255,255,255);
+		body{
+			color: rgb(85, 96, 110);
+		}
+
+}
+*, *:after, *:before{
+	box-sizing: inherit;
+}
+a {
+    text-decoration: none;
+}
+.container{
+	@include container;
+}
+.container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+header{
+	.logo{
+		float: left;
+		margin: 19px 15px 0px 4px;
+		img{
+			width: 82px;
+			height: 51px;
+		}
+	}
+	.slogan{
+		font: italic 16px "Times New Roman", Times, Georgia, serif;
+		color: rgba(255,255,255, 0.3);
+		margin-top: 34px;
+		float: left;
+	}
+	.nav{
+		float: right;
+		list-style-type: none;
+			li{
+				float: left;
+				border-left: 1px solid rgb(44, 50, 61);
+					a{
+						display: block;
+						line-height: 62px;
+						color: rgb(255,255,255);
+						padding: 22px 48px 22px 61px;
+						font:16px  'Open Sans', sans-serif;
+						position: relative;
+							&:hover{
+								background-color: rgb(17, 20, 24);
+							}
+									&:after{
+										content: '';
+										background:url(../img/nav-icon.png)no-repeat;
+										position: absolute;
+										top: 22px;
+    									left: 24px;
+									}
+					}	
+			}
+			.how-it-works a:after{
+				background-position:0px 0px;
+				width: 19px;
+				height: 20px;
+			}
+			.sign-up a:after{
+				background-position:-174px -1px;
+				width: 20px;
+				height: 18px;
+			}
+			.login a:after{
+				background-position:-308px -2px;
+				width: 14px;
+				height: 17px;
+			}
+	}
+}
+.header, .footer{
+	background:rgb(21, 24, 31) url(../img/bg-texture.jpg) repeat; 
+	color: rgb(255,255,255);	
+}
+.hero{
+	background:#333 url(../img/bg-hero.jpg) no-repeat;
+	background-size: cover;
+	height: 461px;
+	text-align: center;
+	color: rgb(255,255,255);
+	padding-top: 31px;
+		h1{
+			font-size: 52px;
+			margin: 81px 0 52px;
+			font:stong 52px 'Open Sans', sans-serif;
+		}
+		p{
+			font-size: 22px;
+		    max-width: 715px;
+		    margin: 0 auto 51px;
+		}
+		.btn{
+			font: 18px 'Open Sans', sans-serif;
+			color: rgb(255,255,255);
+			padding: 21px 44px 18px 44px;
+			border-radius: 3px;
+			margin: 25px;
+		}
+					.btn-green{
+						height: 50px;
+						width: 233px;
+						background-color: rgb(131, 193, 41);
+						-webkit-box-shadow: 0px 6px 6px 1px rgba(81,135,25,1);
+						   -moz-box-shadow: 0px 6px 6px 1px rgba(81,135,25,1);
+								box-shadow: 0px 6px 6px 1px rgba(81,135,25,1);
+					}
+					.btn-blue{
+						height: 49px;
+						width: 174px;
+						background-color: rgb(6, 143, 213);
+						-webkit-box-shadow: 0px 6px 6px 1px rgba(4,107,159,0.9);
+						   -moz-box-shadow: 0px 6px 6px 1px rgba(4,107,159,0.9);
+								box-shadow: 0px 6px 6px 1px rgba(4,107,159,0.9);
+					}
+		
+}
+.middle{
+	background-color:rgb(255,255,255);
+	height: 20px;
+}
+footer{
+	.footer-nav{
+		float: left;
+		margin:39px 79px 43px 63px;
+			.column{
+				float: left;
+
+				.title{
+					text-transform: uppercase;
+					margin-left: 41px;
+					font: bold 12px 'Open Sans';
+					color: rgb(255,255,255);
+				}
+				ul{
+					list-style-type: none;
+					a{
+						text-transform: capitalize;
+						color: rgb(67, 72, 78);
+						font: bold 12px 'Open Sans';
+					}
+				}
+			}
+		}
+		
+
+	.footer-icons,.copyright{
+		float: right;
+	}
+	.footer-icons{
+		float: right;
+	    margin-top: 5%;
+	    margin-bottom: 3%;
+	}	
+	.copyright {
+    clear: right;
+    text-align: right;
+    line-height: 20px;
+    font-size: 12px;
+    color: #8e959c;
+}
+.copyright a {
+    color: #8e959c;
+    margin-left: 8px;
+}
+	
+
+}
